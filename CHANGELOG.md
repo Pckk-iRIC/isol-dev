@@ -7,10 +7,20 @@
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-02-03
+### Added
+- GitHub Releases にタグ作成時の自動アップロードを追加。
+- CHANGELOG に比較リンクを追加。
+
+### Changed
+- README に GitHub からのインストール方法を追記。
+- テンプレートディレクトリをパッケージに含めるよう修正。
+
 ## [0.1.0] - 2026-02-03
 ### Added
 - 初期公開版。
 - `isol-dev init` / `isol-dev test` / `isol-dev build` を利用可能。
 
-[Unreleased]: https://github.com/Pckk-iRIC/isol-dev/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/Pckk-iRIC/isol-dev/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/Pckk-iRIC/isol-dev/releases/tag/v0.1.1
 [0.1.0]: https://github.com/Pckk-iRIC/isol-dev/releases/tag/v0.1.0
