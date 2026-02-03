@@ -59,14 +59,14 @@ jobs:
           version = tag.removeprefix("v")
           changelog = Path("CHANGELOG.md").read_text(encoding="utf-8")
 
-          pattern = re.compile(rf"^## \\[{re.escape(version)}\\].*?$", re.MULTILINE)
+          pattern = re.compile(rf"^## \[{re.escape(version)}\].*?$", re.MULTILINE)
           match = pattern.search(changelog)
           if not match:
             raise SystemExit(f"Version {version} not found in CHANGELOG.md")
 
           start = match.start()
           after_header = changelog[match.end():]
-          next_header = re.search(r"^## \\[", after_header, re.MULTILINE)
+          next_header = re.search(r"^## \[", after_header, re.MULTILINE)
           end = match.end() + (next_header.start() if next_header else len(after_header))
           section = changelog[start:end].strip()
 
