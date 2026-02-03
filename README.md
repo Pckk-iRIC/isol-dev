@@ -40,6 +40,11 @@ cd isol-dev
 pip install -e .
 ```
 
+- wheel (GitHub Releases から)
+```
+pip install https://github.com/Pckk-iRIC/isol-dev/releases/download/<tag>/isol_dev-<version>-py3-none-any.whl
+```
+
 ## コマンド概要
 - `isol-dev init`: テンプレ生成と設定作成
 - `isol-dev test`: CGNS を使った開発中ソルバーのテスト実行

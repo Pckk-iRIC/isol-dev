@@ -14,7 +14,7 @@ dependencies = []
 isol-dev = "isol_dev.cli:main"
 
 [tool.setuptools]
-packages = ["isol_dev"]
+packages = ["isol_dev", "isol_dev.templates"]
 include-package-data = true
 
 [tool.setuptools.package-data]
